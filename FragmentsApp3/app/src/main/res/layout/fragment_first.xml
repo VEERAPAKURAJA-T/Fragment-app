@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    android:background="#019167"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text_frag1"
+        android:textSize="48sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="First Fragment" />
+
+    <Button
+        android:id="@+id/btn_frag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Say Hello" />
+
+    <!--But we're not dealing with constraintlayout.
+We're dealing with frame layout. Frame layout is designed to block out an area on the screen to display a single item.
+It's like a frame that can hold and display one thing on top of another, and this allows the child
+views to overlap one another.The child views are stacked in the order they are added in the frame layout with the last child added
+appearing on the top. You can see I added the button and it is overlapped and above the text view.
+And the solution to prevent the overlapping is to add margins.
+we can't drag and drop the app components-->
+
+</FrameLayout>
